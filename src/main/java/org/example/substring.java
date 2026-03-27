@@ -1,0 +1,18 @@
+package org.example;
+
+public class substring {
+    public static void main(String[] args){
+        if (args.length==0) {
+                System.out.println("Hello, World!");
+        }else{
+            StringBuilder nameBuilder = new StringBuilder();
+            for (String name: args){
+                nameBuilder.append(name).append(", ");
+            }
+            if (nameBuilder.length() > 0) {
+                String name = nameBuilder.substring(0, nameBuilder.length() - 2);
+                System.out.println("Hello, " + name + "!");
+            }
+        }
+    }
+}
